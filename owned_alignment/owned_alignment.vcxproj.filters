@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Hooks">
+      <UniqueIdentifier>{eb87c49a-a7e5-4c6d-b0cf-667180d8b0ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Kernel helpers">
+      <UniqueIdentifier>{cd7239da-23f9-4648-afed-24cbbd8d6b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Native helper">
+      <UniqueIdentifier>{cc08a117-0b55-4c62-93e5-dc34fb2a0d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Kernel helpers">
+      <UniqueIdentifier>{df09ac33-b128-430f-b63c-bd452ff88087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hooks">
+      <UniqueIdentifier>{9c6882f6-8ef8-4f02-b99c-f38098ed130e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OS helpers">
+      <UniqueIdentifier>{726309a1-f176-4e0b-9b34-cc7e14c02b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OS helpers">
+      <UniqueIdentifier>{ddebc846-4800-47e8-9088-cae5fff77fa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Native helpers">
+      <UniqueIdentifier>{972c182e-51c5-4830-b4f6-6bd1d075e131}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="physical_memory.hpp">
+      <Filter>Header Files\Kernel helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="nt.hpp">
+      <Filter>Header Files\Native helper</Filter>
+    </ClInclude>
+    <ClInclude Include="disk_hooker.hpp">
+      <Filter>Header Files\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ioctl_helper.hpp">
+      <Filter>Header Files\Kernel helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="shellcode_generator.hpp">
+      <Filter>Header Files\Native helper</Filter>
+    </ClInclude>
+    <ClInclude Include="driver.hpp">
+      <Filter>Header Files\OS helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="nt_pagetable.hpp">
+      <Filter>Header Files\Native helper</Filter>
+    </ClInclude>
+    <ClInclude Include="nt_ioctl.hpp">
+      <Filter>Header Files\Native helper</Filter>
+    </ClInclude>
+    <ClInclude Include="portable_executable.hpp">
+      <Filter>Header Files\Native helper</Filter>
+    </ClInclude>
+    <ClInclude Include="nt_image.hpp">
+      <Filter>Header Files\Native helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="physical_memory.cpp">
+      <Filter>Source Files\Kernel helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="disk_hooker.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="driver.cpp">
+      <Filter>Source Files\OS helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="portable_executable.cpp">
+      <Filter>Source Files\Native helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
